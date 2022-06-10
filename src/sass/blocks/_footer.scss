@@ -1,0 +1,19 @@
+.footer {
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        a {
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+    &__copyright {
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}

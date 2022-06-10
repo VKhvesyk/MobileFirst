@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container-wide">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="#">Works</a>
+                    <a class="nav__link" href="#">Blog</a>
+                    <a class="nav__link" href="#">Contacts</a>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="hero">
+                    <div class="hero__image">
+                        <picture>
+                            <source media="(min-width:320px)" srcset="img/portrait.png">
+                            <img src="img/portrait.png" alt="John portrait">
+                        </picture>
+                    </div>
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Hi, I am John,
+                        Creative Technologist
+                    </h1>
+                    <div class="hero__descr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum? Autem aliquam numquam quae! Alias illum praesentium id cumque. Aliquid nisi velit at error quam repellat exercitationem ullam, deleniti magni!
+                    </div>
+                    <button class="hero__btn">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="posts">
+        <div class="container">
+
+            <div class="posts__header">
+                <h2 class="posts__title">Recent posts</h2>
+                <a class="posts__view-all" href="#">View all</a>
+            </div>
+
+            <div class="posts__wrapper">
+                <article class="post">
+                    <h3 class="post__title">
+                        <a href="#">Making a design system from scratch</a>
+                    </h3>
+                    <div class="post__info">
+                        <time datetime="2020-02-12">12 Feb 2020</time>
+                        <span></span>
+                        <div class="post__categories">
+                            <a href="#">Design,</a>
+                            <a href="#">Pattern</a>
+                        </div>
+                    </div>
+                    <div class="post__descr">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                    </div>
+                </article>
+
+                <article class="post">
+                    <h3 class="post__title">
+                        <a>Creating pixel perfect icons in Figma</a>
+                    </h3>
+                    <div class="post__info">
+                        <time datetime="2020-02-12">12 Feb 2020</time>
+                        <span></span>
+                        <div class="post__categories">
+                            <a href="#">Design,</a>
+                            <a href="#">Pattern</a>
+                        </div>
+                    </div>
+                    <div class="post__descr">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="works">
+        <div class="container">
+
+            <div class="works__header">
+                <h2 class="works__title">Featured works</h2>
+                <!-- <a class="works__view-all" href="#">View all</a> -->
+            </div>
+
+            <div class="works__wrapper">
+                <article class="work">
+                    <div class="work__image">
+                        <picture>
+                            <source media="(min-width:320px)" srcset="img/dashboard.jpg">
+                            <img src="img/dashboard.jpg" alt="Dashboard">
+                        </picture>
+                    </div>
+
+                    <div class="work__content">
+                        <h3 class="work__title">
+                            <a>Designing Dashboards</a>
+                        </h3>
+                        <div class="work__info">
+                            <time datetime="2020">2020</time>
+                            <div class="work__categories">
+                                <a href="#">Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="post__descr">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                        </div>
+                    </div>
+                    <hr>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__social">
+                    <a href="#">
+                        <img src="icons/social/fb.svg" alt="FaceBook">
+                    </a>
+                    <a href="#">
+                        <img src="icons/social/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="icons/social/twitter.svg" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="icons/social/Linkedin.svg" alt="Linkedin">
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    <p>Copyright ©2020 All rights reserved </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

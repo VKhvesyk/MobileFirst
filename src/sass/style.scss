@@ -1,0 +1,27 @@
+// @import 'libs/_bootstrap-reboot.min';
+
+
+@import 'base/variables';
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@100;300;700&display=swap');
+
+* {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    // overflow-x: hidden;
+    &-wide {
+        @extend .container;
+        height: 50px
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/posts';
+@import 'blocks/works';
+@import 'blocks/footer';
+
+@import 'blocks/media';
