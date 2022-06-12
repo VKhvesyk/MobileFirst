@@ -19,6 +19,10 @@
     }
 }
 
+.hide-overflow {
+    overflow: hidden;
+}
+
 @import 'blocks/header';
 @import 'blocks/posts';
 @import 'blocks/works';

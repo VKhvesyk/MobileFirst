@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const babel = require('gulp-babel');
 
 gulp.task('server', function() {
 
@@ -39,10 +40,18 @@ gulp.task('html', function() {
         .pipe(gulp.dest("app/"));
 });
 
-gulp.task('scripts', function() {
-    return gulp.src("src/js/**/*.js")
-        .pipe(gulp.dest("app/js"));
-});
+// gulp.task('scripts', function() {
+//     return gulp.src("src/js/*.js")
+//         .pipe(gulp.dest("app/js"));
+// });
+
+gulp.task('scripts', () =>
+    gulp.src('src/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('app/js/'))
+);
 
 gulp.task('fonts', function() {
     return gulp.src("src/fonts/**/*")

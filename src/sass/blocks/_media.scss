@@ -5,20 +5,26 @@
     
 // }
 
-// @media (min-width: 376px) {
-//     .container {
-//       
-//     }
+@media (min-width: 376px) {
+    .container {
+        max-width: 340px;
+    }
     
-// }
+}
 
-// @media (min-width: 426px) {
-//     .container {
-//       
-//     }
-// }
+@media (min-width: 426px) {
+    .container {
+        max-width: 380px;
+    }
+}
 
-// @media (min-width: 769px) {
+@media (min-width: 600px) {
+    .container {
+        max-width: 580px;
+    }
+}
+
+// @media (min-width: 801px) {
 //     .container {
 //      
 //     }
@@ -30,3 +36,8 @@
 //     }
 // }
 
+// @media (min-width: 1281px) {
+//     .container {
+//      
+//     }
+// }
