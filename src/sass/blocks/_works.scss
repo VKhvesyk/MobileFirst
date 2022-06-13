@@ -9,8 +9,8 @@
 }
 
 .work {
+    margin: 30px 0px;
     &__image {
-        margin-top: 15px;
         height: 200px;
         picture {
             img {
@@ -21,15 +21,13 @@
             }
         }
     }
-    &__content {
-        margin-top: 20px;
-    }
     &__title {
         a {
             font-size: 24px;
             font-weight: 700;
             line-height: 30px;
             color: $color-dark;
+            text-decoration: none;
         }
     }
     &__info {

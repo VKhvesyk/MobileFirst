@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="icons/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+
+    <!-- Primary Meta Tags -->
+    <title>John Doe, Creative Technologist</title>
+    <meta name="title" content="John Doe, Creative Technologist">
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum?">
+    <!-- Primary Meta Tags -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vasylkhvesyk.com.ua/portfolio/johndoe/index.html">
+    <meta property="og:title" content="John Doe, Creative Technologist">
+    <meta property="og:description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum?">
+    <meta property="og:image" content="https://vasylkhvesyk.com.ua/portfolio/johndoe/images/website-preview.jpg">
+    <!-- Open Graph / Facebook -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://vasylkhvesyk.com.ua/portfolio/johndoe/index.html">
+    <meta property="twitter:title" content="John Doe, Creative Technologist">
+    <meta property="twitter:description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum?">
+    <meta property="twitter:image" content="https://vasylkhvesyk.com.ua/portfolio/johndoe/images/website-preview.jpg">
+    <!-- Twitter -->
+
+    <!-- schema -->
+    <meta itemprop="name" content="John Doe, Creative Technologist">
+    <meta itemprop="url" content="vasylkhvesyk.com.ua/portfolio/johndoe/index.html">
+    <meta itemprop="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum?">
+    <meta itemprop="image" content="https://vasylkhvesyk.com.ua/portfolio/johndoe/images/website-preview.jpg">
+    <!--schema-->
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "address": {
+            "@type": "PostalAddress",
+                "addressLocality": "New York",
+                "addressRegion": "NY",
+                "postalCode": "10014",
+                "streetAddress": "495 Grove Street"
+            },
+            "email": "mailto:john-doe@example.example",
+            "image": "https://vasylkhvesyk.com.ua/portfolio/johndoe/images/website-preview.jpg",
+            "jobTitle": "Developer",
+            "name": "John Doe",
+            "telephone": "(123) 123-1231",
+            "url": "http://www.example.example" 
+        }
+    </script>
+    <!-- JSON-LD -->
+
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
 </head>
 <body>
 
@@ -31,7 +94,6 @@
                             <source media="(min-width:320px)" srcset="img/portrait.png">
                             <img src="img/portrait.png" alt="John portrait">
                         </picture>
-                    </div>
                 </div>
                 <div class="hero__content">
                     <h1 class="hero__title">Hi, I am John,
@@ -41,6 +103,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, harum? Autem aliquam numquam quae! Alias illum praesentium id cumque. Aliquid nisi velit at error quam repellat exercitationem ullam, deleniti magni!
                     </div>
                     <button class="hero__btn">Download Resume</button>
+                </div>
                 </div>
             </div>
         </div>
@@ -68,13 +131,13 @@
                         </div>
                     </div>
                     <div class="post__descr">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
                     </div>
                 </article>
 
                 <article class="post">
                     <h3 class="post__title">
-                        <a>Creating pixel perfect icons in Figma</a>
+                        <a href="#">Creating pixel perfect icons in Figma</a>
                     </h3>
                     <div class="post__info">
                         <time datetime="2020-02-12">12 Feb 2020</time>
@@ -102,98 +165,106 @@
 
             <div class="works__wrapper">
                 <article class="work">
-                    <div class="work__image">
-                        <picture>
-                            <source media="(min-width:320px)" srcset="img/dashboard.jpg">
-                            <img src="img/dashboard.jpg" alt="Dashboard">
-                        </picture>
-                    </div>
-
-                    <div class="work__content">
-                        <h3 class="work__title">
-                            <a>Designing Dashboards</a>
-                        </h3>
-                        <div class="work__info">
-                            <time datetime="2020">2020</time>
-                            <div class="work__categories">
-                                <a href="#">Dashboard</a>
-                            </div>
+                    <div class="work__wrapper">
+                        <div class="work__image">
+                            <picture>
+                                <source media="(min-width:320px)" srcset="img/dashboard.jpg">
+                                <img src="img/dashboard.jpg" alt="Dashboard">
+                            </picture>
                         </div>
-                        <div class="post__descr">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+    
+                        <div class="work__content">
+                            <h3 class="work__title">
+                                <a href="#">Designing Dashboards</a>
+                            </h3>
+                            <div class="work__info">
+                                <time datetime="2020">2020</time>
+                                <div class="work__categories">
+                                    <a href="#">Dashboard</a>
+                                </div>
+                            </div>
+                            <div class="post__descr">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                            </div>
                         </div>
                     </div>
                     <hr>
                 </article>
                 <article class="work">
-                    <div class="work__image">
-                        <picture>
-                            <source media="(min-width:320px)" srcset="img/vibrant-portrait.jpg">
-                            <img src="img/vibrant-portrait.jpg" alt="Vibrant portrait">
-                        </picture>
-                    </div>
-
-                    <div class="work__content">
-                        <h3 class="work__title">
-                            <a>Vibrant Portraits of 2020</a>
-                        </h3>
-                        <div class="work__info">
-                            <time datetime="2018">2018</time>
-                            <div class="work__categories">
-                                <a href="#">Illustration</a>
-                            </div>
+                    <div class="work__wrapper">
+                        <div class="work__image">
+                            <picture>
+                                <source media="(min-width:320px)" srcset="img/vibrant-portrait.jpg">
+                                <img src="img/vibrant-portrait.jpg" alt="Vibrant portrait">
+                            </picture>
                         </div>
-                        <div class="post__descr">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+    
+                        <div class="work__content">
+                            <h3 class="work__title">
+                                <a href="#">Vibrant Portraits of 2020</a>
+                            </h3>
+                            <div class="work__info">
+                                <time datetime="2018">2018</time>
+                                <div class="work__categories">
+                                    <a href="#">Illustration</a>
+                                </div>
+                            </div>
+                            <div class="post__descr">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                            </div>
                         </div>
                     </div>
                     <hr>
                 </article>
                 <article class="work">
-                    <div class="work__image">
-                        <picture>
-                            <source media="(min-width:320px)" srcset="img/malayamal-type.jpg">
-                            <img src="img/malayamal-type.jpg" alt="Malayamal type">
-                        </picture>
-                    </div>
-
-                    <div class="work__content">
-                        <h3 class="work__title">
-                            <a>36 Days of Malayalam type</a>
-                        </h3>
-                        <div class="work__info">
-                            <time datetime="2018">2018</time>
-                            <div class="work__categories">
-                                <a href="#">Illustration</a>
-                            </div>
+                    <div class="work__wrapper">
+                        <div class="work__image">
+                            <picture>
+                                <source media="(min-width:320px)" srcset="img/malayamal-type.jpg">
+                                <img src="img/malayamal-type.jpg" alt="Malayamal type">
+                            </picture>
                         </div>
-                        <div class="post__descr">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+    
+                        <div class="work__content">
+                            <h3 class="work__title">
+                                <a href="#">36 Days of Malayalam type</a>
+                            </h3>
+                            <div class="work__info">
+                                <time datetime="2018">2018</time>
+                                <div class="work__categories">
+                                    <a href="#">Illustration</a>
+                                </div>
+                            </div>
+                            <div class="post__descr">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                            </div>
                         </div>
                     </div>
                     <hr>
                 </article>
                 <article class="work">
-                    <div class="work__image">
-                        <picture>
-                            <source media="(min-width:320px)" srcset="img/components.jpg">
-                            <img src="img/components.jpg" alt="Components">
-                        </picture>
-                    </div>
-
-                    <div class="work__content">
-                        <h3 class="work__title">
-                            <a>Components</a>
-                        </h3>
-                        <div class="work__info">
-                            <time datetime="2018">2018</time>
-                            <div class="work__categories">
-                                <a href="#">Components, </a>
-                                <a href="#">Design</a>
-                            </div>
+                    <div class="work__wrapper">
+                        <div class="work__image">
+                            <picture>
+                                <source media="(min-width:320px)" srcset="img/components.jpg">
+                                <img src="img/components.jpg" alt="Components">
+                            </picture>
                         </div>
-                        <div class="post__descr">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+    
+                        <div class="work__content">
+                            <h3 class="work__title">
+                                <a href="#">Components</a>
+                            </h3>
+                            <div class="work__info">
+                                <time datetime="2018">2018</time>
+                                <div class="work__categories">
+                                    <a href="#">Components, </a>
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                            <div class="post__descr">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ex, ea quia aperiam natus maiores in placeat soluta eius officiis error sunt nulla, facere tenetur neque explicabo minus, aliquam nemo.
+                            </div>
                         </div>
                     </div>
                     <hr>

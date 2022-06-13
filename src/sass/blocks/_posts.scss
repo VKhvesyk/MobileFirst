@@ -16,7 +16,7 @@
 .post {
     margin-top: 16px;
     padding: 12px 20px 20px 20px;
-    height: 266px;
+    min-height: 266px;
     background-color: #fff;
     border-radius: 4px;
     &__title {
